@@ -1,0 +1,15 @@
+Imagine a shared notebook that a group of people all keep copies of. Whenever someone makes a transaction — "Ali paid Sara 100" — everyone writes it down in their own copy at the same time. No single person owns the master notebook; they all hold identical ones.
+
+A few things make this notebook special:
+
+**It's append-only.** You can add new lines, but you can't erase or change old ones. If you want to fix a mistake, you write a new correcting entry — the original stays visible forever.
+
+**Entries are bundled into "blocks."** Instead of writing one line at a time, transactions get grouped into pages. Each new page is stamped with a code that's calculated from the page before it — so the pages link together in order, like a *chain* of *blocks*. (That's literally where the name comes from.)
+
+**Tampering is obvious.** Because each page's stamp depends on the previous one, if someone secretly alters an old page, its stamp breaks, and so does every page after it. Everyone instantly sees the copies don't match, and the fake is rejected.
+
+**The group agrees before anything is added.** New pages only get written once a majority agree the entries are valid. No central referee needed — the rules and the crowd do the refereeing.
+
+The net effect: a record that's shared, permanent, and very hard to fake, without any single bank, company, or person in charge of it.
+
+One distinction that matters for your project: a **public** blockchain (like Bitcoin) lets anyone join and keep a copy. A **permissioned** one — what your fraud network uses — is invite-only: just the member banks and the regulator hold the notebook. Same tamper-proof mechanics, but a closed, trusted group instead of the whole world.
