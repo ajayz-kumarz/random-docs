@@ -1,0 +1,9 @@
+A **ledger** is just a record book of transactions — historically, the accounting book a business keeps where every entry is written down: money in, money out, who owes what. The word predates computers entirely; shopkeepers and banks have kept ledgers for centuries.
+
+That's the whole idea: a running, ordered list of "what happened," kept so you can always check the current state and trace how it got there.
+
+In the blockchain context it's the same concept, just shared. When people call a blockchain a "distributed ledger," they mean that shared notebook from before *is* the ledger — the list of all transactions — and "distributed" means many parties each hold an identical copy rather than one company keeping the only book.
+
+So in your fraud network, the ledger is the shared list of fraud flags: each entry is a token plus what it was flagged for plus when. Every member bank holds the same copy of that record. The earlier slide that showed rows of tokens with timestamps — that *is* the ledger, displayed as a list.
+
+Quick way to keep the terms straight: the **ledger** is the record (the list of entries), a **block** is a page that bundles several entries together, and the **blockchain** is all those pages linked in order. Ledger is the "what," blockchain is the "how it's stored and protected."
